@@ -1,0 +1,60 @@
+body {
+    background-image: url("img/fondo.jpg");
+    background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: monospace;
+  text-align: center;
+  gap: 30px
+}
+ /*     font-family monospace;
+     text-align: center;
+    
+     gap: 30px 
+
+    } */
+
+   
+    servicios{
+    display: flex;
+    justify-content: center;
+    gap: 40px
+}
+
+.card { 
+    border: 1px solid #0e0202
+    padding 120px;
+    background: white 
+    cursor pointer
+ 
+}
+h3 {
+    font-size: 22px
+}
+p {
+    font-size: 20px 
+}
+h4{
+    font-size: 18px
+}
+
+h5{ 
+    font-size:18px
+}
+button {
+    font-size: 20px
+
+}
+.card img {
+    width: 250px
+}
+.selected {
+    border: 2px solid rgb(14, 0, 2);
+
+}
+
+
+#adminBorrar {
+  display: none;
+}
+
