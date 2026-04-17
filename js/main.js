@@ -17,18 +17,6 @@ fetch("js/servicios.json")
     mostrarServicios();
   });
 
-// PROMESA
-/* function obtenerServicios() {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(serviciosJSON), 500);
-  });
-} */
-
-// CARGAR SERVICIOS
-/* async function cargarServicios() {
-  servicios = await obtenerServicios();
-  mostrarServicios();
-} */
 
 // MOSTRAR SERVICIOS
 function mostrarServicios() {
@@ -202,37 +190,7 @@ Ya envié la seña de $2000 al alias ${alias}`;
     if (r.isConfirmed) window.open(urlWhatsApp, "_blank");
   });
 
-  //
-/*   const turno = {
-    servicio: servicioSeleccionado.nombre,
-    fecha: fechaSeleccionada.toDateString(),
-    hora: horarioSeleccionado
-  };
-
-  const turnos = JSON.parse(localStorage.getItem("turnos")) || [];
-  turnos.push(turno);
-  localStorage.setItem("turnos", JSON.stringify(turnos));
-
-  const alias = "maleojeda.mp";
-  const telefono = "5491137989228";
-
-  const mensaje = `Hola! Reservé un turno
-Servicio: ${turno.servicio}
-Fecha: ${turno.fecha}
-Hora: ${turno.hora}
-Ya envié la seña de $2000 al alias ${alias}`;
-
-  const urlWhatsApp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
-
-  Swal.fire({
-    title: "Turno reservado 💅",
-    html: `<b>${turno.servicio}</b><br>${turno.fecha} ${turno.hora}`,
-    showCancelButton: true,
-    confirmButtonText: "Enviar WhatsApp"
-  }).then((r) => {
-    if (r.isConfirmed) window.open(urlWhatsApp, "_blank");
-  });
- */
+ 
   // RESET
   turnoPendiente = null;
   servicioSeleccionado = null;
@@ -342,7 +300,3 @@ function adminTurnos() {
   });
 }
 
-//
-JSON.parse(localStorage.getItem("turnos"))
-// INICIO
-/* cargarServicios(); */
