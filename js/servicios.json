@@ -1,0 +1,5 @@
+[
+  { "id": 1, "nombre": "Capping gel", "precio": 15000, "img": "img/img/capping.jpg" },
+  { "id": 2, "nombre": "Semipermanente", "precio": 10000, "img": "img/img/semipermanente.jpg" },
+  { "id": 3, "nombre": "Softgel", "precio": 20000, "img": "img/img/softgel.jpg" }
+]
